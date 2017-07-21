@@ -3,7 +3,8 @@ div.container{
   font-family: "Arial";
   margin: auto;
   width: 50%;
-  padding: 0px;
+  padding: 5px;
+  height: 1000px;
 
 }
 
