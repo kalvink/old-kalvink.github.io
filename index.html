@@ -5,7 +5,12 @@
   <title>Kalvin Kao</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css\main.css">
+  <link rel="stylesheet" type='text/css' href="css/main.css">
+  <link rel="stylesheet" type='text/css' href="css/lightbox.css">
+
+  <!-- JS -->
+  <script type='text/javascript' src='js/lightbox.js'></script>
+  Try it Yourself »
 
 </head>
 
@@ -20,27 +25,138 @@
       <ul>
         <li><a href="index.html">PORTFOLIO</a></li>
         <li><a href="resume.html">RESUME</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
 
 
     <h1 align="center">Portfolio</h1>
-    <h2>Android</h2>
+    <h2 align="center">Android</h2>
 
 
     <p></p>
 
-    <h2>Web</h2>
+<br><br>
+
+    <h2 align="center">Web Development</h2>
+    <center><a href="http://www.handsonproperty.peterhuang.net/index.php" target="_blank">Hands On Property</a>
+</center>
 
 
-    <footer>
-<div>
-  hh
-</div>
-    </footer>
-
+    <!--
+    Lightbox
+    Side by Side images
+  -->
+  <div class="row">
+    <div class="column">
+      <img src="img/img1.png" width="250px" height="150px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="img/img2.png" width="250px" height="150px" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="img/img3.png" width="250px" height="150px" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="img/img4.png" width="250px" height="150px" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="img/img5.png" width="250px" height="150px" onclick="openModal();currentSlide(5)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="img/img6.png" width="250px" height="150px" onclick="openModal();currentSlide(6)" class="hover-shadow">
+    </div>
   </div>
+
+  <!-- Expanded Full Image -->
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="img/img1exp.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="img/img2exp.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="img/img3exp.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="img/img4exp.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="img/img5exp.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="img/img6exp.png" style="width:100%">
+      </div>
+
+      <!-- Close lightbox with escape -->
+      <script type="text/javascript">
+      document.onkeydown = function(evt) {
+          evt = evt || window.event;
+          if (evt.keyCode == 27) {
+              closeModal();
+          }
+      };
+      </script>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Images under Full Expanded Image  -->
+
+      <div class="column">
+        <img class="demo" src="img/img1.png" onclick="currentSlide(1)" alt="Intelligence Estimation System">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="img/img2.png" onclick="currentSlide(2)" alt="Estimated Property Value">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="img/img3.png" onclick="currentSlide(3)" alt="Contact Real Estate Agent">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="img/img4.png" onclick="currentSlide(4)" alt="Sold Properties">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="img/img5.png" onclick="currentSlide(5)" alt="About Us">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="img/img6.png" onclick="currentSlide(6)" alt="Contact Us">
+      </div>
+    </div>
+  </div>
+  <!--Lightbox End-->
+
+  <footer>
+    <div>
+      
+    </div>
+  </footer>
+
+</div>
 
 
 
