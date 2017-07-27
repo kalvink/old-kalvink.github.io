@@ -1,43 +1,17 @@
-div.container{
-  background-color: #ffffff;
-  font-family: "Arial";
-  margin: auto;
-  width: 50%;
-  padding: 5px;
-  height: 1000px;
-
-}
+/*!
+ * Start Bootstrap - 3 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
 
 body {
-  background-color: #141414;
-}
-/*
-* === MAJOR SECTION HEADING ===
-*/
-
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-li {
-    float: left;
+.portfolio-item {
+    margin-bottom: 25px;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
+footer {
+    margin: 50px 0;
 }
